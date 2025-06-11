@@ -1,0 +1,148 @@
+/* 구글 폰트 적용 */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEwMDdfNDYg%2FMDAxNjAyMDcxMjU2MjIw.tlJPI-6_MeB5ipCFd2MPeywwDp5Z8ZbIo7f0gh-OiXMg.FBbeqzEKAi0puCZACtR3n8ckMZs-60k77TNXQJ4FBvsg.JPEG.ghkdwjddns3%2FKakaoTalk_20201007_203210271_02.jpg&type=sc960_832') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* 네비게이션 */
+header nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #f01d1d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ff5c5c;
+}
+
+/* 제목 */
+header h1 {
+  text-align: center;
+  margin: 20px 0 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px black;
+}
+/* 역사 */
+.history-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* 간격을 좁게 */
+  margin-top: 20px;
+  flex-wrap: wrap; /* 작은 화면에서는 세로 정렬 */
+}
+
+.history-content img {
+  max-width: 280px; /* 조금 더 슬림하게 */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.history-text {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  min-width: 250px;
+}
+
+
+/* 섹션 */
+section {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+section h2 {
+  text-align: center;
+  color: #f01d1d;
+  margin-bottom: 20px;
+}
+
+/* 차량 소개 박스 */
+.car {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 30px;
+}
+
+.car img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.car img:hover {
+  transform: scale(1.05);
+}
+
+.car h3 {
+  color: #f01d1d;
+  margin-bottom: 10px;
+}
+
+.car p {
+  color: #ddd;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+
+/* 반응형 */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  section {
+    padding: 15px 20px;
+    margin: 15px 10px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+    margin: 15px 0 30px;
+  }
+}
